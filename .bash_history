@@ -1,6 +1,3 @@
-set +o physical
-set -o pipefail
-set +o posix
 set +o privileged
 set +o verbose
 set +o vi
@@ -498,3 +495,6 @@ set +o privileged
 set +o verbose
 set +o vi
 set +o xtrace
+git add .
+git commit -m "met"
+git push --force origin main
