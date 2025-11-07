@@ -1,0 +1,8 @@
+{
+  "development": {
+    "databaseUrl": "postgresql://neondb_owner:npg_xOAmMe3W1nkU@ep-calm-boat-a187mu3u-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+  },
+  "production": {
+    "databaseUrl": "postgresql://neondb_owner:npg_xOAmMe3W1nkU@ep-calm-boat-a187mu3u-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+  }
+}

@@ -1,0 +1,183 @@
+model_list:
+  # Azure OpenAI - Reference: https://docs.litellm.ai/docs/providers/azure
+  # Uncomment and configure if needed
+  # - model_name: azure-gpt-4
+  #   litellm_params:
+  #     model: azure/<your-deployment-name>
+  #     api_base: os.environ/AZURE_API_BASE
+  #     api_key: os.environ/AZURE_API_KEY
+  #     api_version: "2023-07-01-preview"
+  
+  # NVIDIA NIM Models - Reference: https://docs.api.nvidia.com/nim/reference/llm-apis
+  
+  # NVIDIA Llama Models
+  - model_name: shin-llama-3-1-nemotron-70b
+    litellm_params:
+      model: nvidia_nim/nvidia/llama-3.1-nemotron-70b-instruct
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  - model_name: shin-llama-3-1-405b
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-405b-instruct
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  - model_name: shin-llama-3-1-70b
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-70b-instruct
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  - model_name: shin-llama-3-1-8b
+    litellm_params:
+      model: nvidia_nim/meta/llama-3.1-8b-instruct
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  # NVIDIA Mistral Models
+  - model_name: shin-mistral-nemo-12b
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-nemo-12b-instruct
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  - model_name: shin-mistral-large-2
+    litellm_params:
+      model: nvidia_nim/mistralai/mistral-large-2-instruct
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  # MoonshotAI Kimi K2 - Available via NVIDIA NIM
+  - model_name: shin-moonshotai-kimi-k2
+    litellm_params:
+      model: nvidia_nim/moonshotai/kimi-k2-instruct-0905
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  # Qwen Coder - Available via NVIDIA NIM
+  - model_name: shin-qwen-coder-480b
+    litellm_params:
+      model: nvidia_nim/qwen/qwen3-coder-480b-a35b-instruct
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  # MiniMax M2 - Available via NVIDIA NIM
+  - model_name: shin-minimax-m2
+    litellm_params:
+      model: nvidia_nim/minimaxai/minimax-m2
+      api_key: os.environ/NVIDIA_NIM_API_KEY
+      api_base: os.environ/NVIDIA_NIM_API_BASE
+  
+  # Example: Ollama Local Models - Reference: https://docs.litellm.ai/docs/providers/ollama
+  # - model_name: ollama-llama2
+  #   litellm_params:
+  #     model: ollama/llama2
+  #     api_base: http://localhost:11434
+  
+  # OpenCode.ai Provider
+  - model_name: shin-4.6
+    litellm_params:
+      model: openai/big-pickle
+      api_key: os.environ/OPENCODE_API_KEY
+      api_base: https://opencode.ai/zen/v1
+  
+  # GLM via Z.ai Provider
+  - model_name: glm-4.6
+    litellm_params:
+      model: openai/glm-4.6
+      api_key: os.environ/ZAI_API_KEY
+      api_base: https://api.z.ai/api/anthropic
+  
+  # iFlow Provider - Multiple Models
+  - model_name: otsu-qwen3-coder-plus
+    litellm_params:
+      model: openai/qwen3-coder-plus
+      api_key: os.environ/IFLOW_API_KEY
+      api_base: https://apis.iflow.cn/v1
+  
+  - model_name: otsu-qwen3-max
+    litellm_params:
+      model: openai/qwen3-max
+      api_key: os.environ/IFLOW_API_KEY
+      api_base: https://apis.iflow.cn/v1
+  
+  - model_name: otsu-qwen3-coder
+    litellm_params:
+      model: openai/qwen3-coder
+      api_key: os.environ/IFLOW_API_KEY
+      api_base: https://apis.iflow.cn/v1
+  
+  - model_name: otsu-kimi-k2-0905
+    litellm_params:
+      model: openai/kimi-k2-0905
+      api_key: os.environ/IFLOW_API_KEY
+      api_base: https://apis.iflow.cn/v1
+  
+  - model_name: otsu-glm-4.6
+    litellm_params:
+      model: openai/glm-4.6
+      api_key: os.environ/IFLOW_API_KEY
+      api_base: https://apis.iflow.cn/v1
+  
+  - model_name: otsu-deepseek-v3.2
+    litellm_params:
+      model: openai/deepseek-v3.2
+      api_key: os.environ/IFLOW_API_KEY
+      api_base: https://apis.iflow.cn/v1
+  
+  - model_name: otsu-qwen3-235b-thinking
+    litellm_params:
+      model: openai/qwen3-235b-a22b-thinking-2507
+      api_key: os.environ/IFLOW_API_KEY
+      api_base: https://apis.iflow.cn/v1
+  
+  # Minimax1 Provider via anthropic endpoint
+  - model_name: minimax1-claude
+    litellm_params:
+      model: openai/claude
+      api_key: os.environ/MINIMAX1_API_KEY
+      api_base: https://api.minimax.io/anthropic
+
+  # KAT Provider - Custom endpoint
+  - model_name: shin-otsu-pro
+    litellm_params:
+      model: openai/ep-54wdd8-1762521555111681538
+      api_key: os.environ/KAT_API_KEY
+      api_base: https://vanchin.streamlake.ai/api/gateway/v1/endpoints
+
+  - model_name: shin-otsu-plus
+    litellm_params:
+      model: openai/ep-w4jwca-1760471819232090405
+      api_key: os.environ/KAT_API_KEY
+      api_base: https://vanchin.streamlake.ai/api/gateway/v1/endpoints
+
+litellm_settings:
+  # Enable/disable features
+  drop_params: true
+  set_verbose: true
+  request_timeout: 600
+  
+  # Caching (optional)
+  # cache: true
+  # cache_params:
+  #   type: "redis"
+  #   host: "localhost"
+  #   port: 6379
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY # Authentication key for the proxy
+  #database_url: "DATABASE_URL='postgresql://neondb_owner:npg_xOAmMe3W1nkU@ep-calm-boat-a187mu3u-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'" # Database disabled (optional - requires prisma setup)
+  
+  # Uncomment to enable detailed logging
+  # log_level: "DEBUG"
+
+router_settings:
+  routing_strategy: simple-shuffle # Options: simple-shuffle, least-busy, usage-based-routing
+  num_retries: 3
+  retry_after: 2
+  timeout: 600
+  
+  # Load balancing (if you have multiple instances of same model)
+  # enable_loadbalancing: true
+

@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "/teamspace/studios/this_studio": {
+      "projectPath": "/teamspace/studios/this_studio",
+      "name": "patient-nurturing",
+      "project": "8acbcf8f-cede-477f-9f6f-10c46bec1e2a",
+      "environment": "da2d532d-9037-47c7-8abc-fc8a69ce4705",
+      "environmentName": "production",
+      "service": "c16e1cf3-ce24-447b-b9cf-6b89e506c783"
+    }
+  },
+  "user": {
+    "token": "rw_Fe26.2**5eb78fc0f8060c4b383bfcee35f04c8818dc574c9052f13c89bbc3f714e96595*8U2UVPO6tfMNWjSTv5yfVw*kY_deoT0i2oULDU4NFAKfmgtLG3BT0oUTIFwgfRkDMvR2CHiipuWQLPJtZawOZsKbINTV4j7DF31C7APsJ4SIQ*1765135586812*8da901748a4f27c9e6002acb85870b2a94ffadb07ecaf52fdb37c61bf3ea8041*mRsFUs7pMy_iaYpA2Sp2efgeejjNBdHTxbfFOpXZt7Q"
+  },
+  "linkedFunctions": null
+}
