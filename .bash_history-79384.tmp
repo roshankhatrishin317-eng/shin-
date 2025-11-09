@@ -1,3 +1,27 @@
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set +o monitor
+set +o noclobber
+set +o noexec
+set +o noglob
+set +o nolog
+set +o notify
+set +o onecmd
+set +o physical
+set -o pipefail
+set +o posix
+set +o privileged
+set +o verbose
+set +o vi
+set +o xtrace
+set +o ignoreeof
+set -o interactive-comments
+set +o keyword
+set +o monitor
+set +o noclobber
+set +o noexec
 set +o noglob
 set +o nolog
 set +o notify
@@ -474,27 +498,3 @@ export ANTHROPIC_BASE_URL=https://agentrouter.org/
 export ANTHROPIC_AUTH_TOKEN=sk-t1el0hJ80Ee60D6Ev79UnrFavBCADfY0KB8KQ4mHKqFo1sea
 export ANTHROPIC_API_KEY=sk-t1el0hJ80Ee60D6Ev79UnrFavBCADfY0KB8KQ4mHKqFo1sea
 claude --dangerously-skip-permissions
-/teamspace/studios/this_studio/start_gateway.py
-/teamspace/studios/this_studio/omg/keep_awake.py
-/home/zeus/miniconda3/envs/cloudspace/bin/python /teamspace/studios/this_studio/keep_alive.py
-/teamspace/studios/this_studio/restart-tunnel.sh
-export ANTHROPIC_BASE_URL=https://agentrouter.org/
-export ANTHROPIC_AUTH_TOKEN=sk-xSiQpGxsi3gDCOzBagmWKNZITnNtUOClR9J7FcRD9DHsSL5Y
-export ANTHROPIC_API_KEY=sk-xSiQpGxsi3gDCOzBagmWKNZITnNtUOClR9J7FcRD9DHsSL5Y
-claude --dangerously-skip-permissions
-export ANTHROPIC_BASE_URL=https://agentrouter.org/
-export ANTHROPIC_AUTH_TOKEN=sk-xSiQpGxsi3gDCOzBagmWKNZITnNtUOClR9J7FcRD9DHsSL5Y
-export ANTHROPIC_API_KEY=sk-xSiQpGxsi3gDCOzBagmWKNZITnNtUOClR9J7FcRD9DHsSL5Y
-claude --dangerously-skip-permissions
-clear
-clear
-clear
-clear
-/teamspace/studios/this_studio/keep_alive.py
-/teamspace/studios/this_studio/keep_alive.py
-/teamspace/studios/this_studio/restart-tunnel.sh
-/home/zeus/miniconda3/envs/cloudspace/bin/python /teamspace/studios/this_studio/keep_alive.py
-/teamspace/studios/this_studio/restart-tunnel.sh
-/teamspace/studios/this_studio/restart-tunnel.sh
-/teamspace/studios/this_studio/restart-tunnel.sh
-/teamspace/studios/this_studio/restart-tunnel.sh
